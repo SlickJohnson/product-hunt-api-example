@@ -44,6 +44,7 @@ extension Post: Decodable {
     tagline = try postsContainer.decode(String.self, forKey: .tagline)
     votesCount = try postsContainer.decode(Int.self, forKey: .votesCount)
     commentsCount = try postsContainer.decode(Int.self, forKey: .commentsCount)
+    
     let screenshotURLContainer = try postsContainer.nestedContainer(keyedBy: PreviewImageURLKeys.self, forKey: .previewImageURL)
     previewImageUrl = try screenshotURLContainer.decode(URL.self, forKey: .imageURL)
   }

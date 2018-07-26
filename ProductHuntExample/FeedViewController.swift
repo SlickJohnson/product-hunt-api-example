@@ -17,7 +17,9 @@ class FeedViewController: UIViewController {
   var networkManager: NetworkManager!
   var posts: [Post]? {
     didSet {
-      feedTableView.reloadData()
+      DispatchQueue.main.async { [unowned self] in
+        self.feedTableView.reloadData()
+      }
     }
   }
 
@@ -41,14 +43,13 @@ class FeedViewController: UIViewController {
       }
     }
   }
-
 }
 
 // MARK: UITableViewDataSource
 extension FeedViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//    guard let posts = posts else { return 0 }
-    return 3
+    guard let posts = posts else { return 0 }
+    return posts.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
