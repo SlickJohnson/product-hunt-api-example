@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductHuntExample/NetworkManager.swift"
+            timestampString = "554319455.7127351"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getPosts(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductHuntExample.NetworkManager.getPosts(completion: (Swift.Array&lt;ProductHuntExample.Post&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ProductHuntExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/williejohnson/Documents/github/curriculum-planning/ProductHuntExample/ProductHuntExample/NetworkManager.swift"
+                  timestampString = "554319455.901661"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ProductHuntExample.NetworkManager.getPosts(completion: (Swift.Array&lt;ProductHuntExample.Post&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ProductHuntExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/williejohnson/Documents/github/curriculum-planning/ProductHuntExample/ProductHuntExample/NetworkManager.swift"
+                  timestampString = "554319455.904201"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
