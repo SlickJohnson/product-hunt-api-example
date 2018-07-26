@@ -15,6 +15,7 @@
 		3DA97DCC20E4209800A4C58B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA97DCB20E4209800A4C58B /* Assets.xcassets */; };
 		3DA97DCF20E4209800A4C58B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA97DCD20E4209800A4C58B /* LaunchScreen.storyboard */; };
 		3DC8480D20F3E1720015FE80 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8480C20F3E1720015FE80 /* FeedViewController.swift */; };
+		3DCF8D04210A5B1C000EDC52 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF8D03210A5B1C000EDC52 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3DA97DCE20E4209800A4C58B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DA97DD020E4209800A4C58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC8480C20F3E1720015FE80 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		3DCF8D03210A5B1C000EDC52 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				3DA97DD020E4209800A4C58B /* Info.plist */,
 				3D0BE64C20E6A8430003B567 /* Post.swift */,
 				3D0BE65020E6AF3C0003B567 /* PostTableViewCell.swift */,
+				3DCF8D03210A5B1C000EDC52 /* CustomTableViewCell.swift */,
 				3D0BE65220E6B8BF0003B567 /* NetworkManager.swift */,
 			);
 			path = ProductHuntExample;
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCF8D04210A5B1C000EDC52 /* CustomTableViewCell.swift in Sources */,
 				3D0BE64D20E6A8430003B567 /* Post.swift in Sources */,
 				3D0BE65320E6B8BF0003B567 /* NetworkManager.swift in Sources */,
 				3DA97DC520E4209700A4C58B /* AppDelegate.swift in Sources */,
