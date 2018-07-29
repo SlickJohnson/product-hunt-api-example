@@ -13,21 +13,22 @@ class FeedViewController: UIViewController {
   /// Displays the currently featured posts on Product Hunt.
   @IBOutlet weak var feedTableView: UITableView!
 
-  /// Handles requests to Product Hunt API.
-  var networkManager: NetworkManager!
   var posts: [Post]? {
     didSet {
-      DispatchQueue.main.async { [unowned self] in
-        self.feedTableView.reloadData()
-      }
+      feedTableView.reloadData()
     }
   }
+
+  /// Handles requests to Product Hunt API.
+  var networkManager: NetworkManager!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     feedTableView.dataSource = self
     feedTableView.delegate = self
+
     networkManager = NetworkManager()
+
     updateFeed()
   }
 
@@ -37,10 +38,8 @@ class FeedViewController: UIViewController {
   }
 
   func updateFeed() {
-    DispatchQueue.global().async { [unowned self] in
-      self.networkManager.getPosts() { result in
-        self.posts = result
-      }
+    networkManager.getPosts() { result in
+      self.posts = result
     }
   }
 }
@@ -66,5 +65,12 @@ extension FeedViewController: UITableViewDataSource {
 extension FeedViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 250
+  }
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+    var commentsView = storyboard.instantiateViewController(withIdentifier: "commentsView") as? CommentsTableViewController
+    
+    navigationController?.pushViewController(commentsView!, animated: true)
   }
 }
