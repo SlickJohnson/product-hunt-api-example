@@ -17,6 +17,7 @@
 		3DC8480D20F3E1720015FE80 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8480C20F3E1720015FE80 /* FeedViewController.swift */; };
 		3DDC1EC7210E6E7500CC3300 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1EC6210E6E7500CC3300 /* CommentsTableViewController.swift */; };
 		3DDC1EC9210E714700CC3300 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1EC8210E714700CC3300 /* CommentTableViewCell.swift */; };
+		3DDC1ECB210F88FE00CC3300 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1ECA210F88FE00CC3300 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3DC8480C20F3E1720015FE80 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		3DDC1EC6210E6E7500CC3300 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		3DDC1EC8210E714700CC3300 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		3DDC1ECA210F88FE00CC3300 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				3D0BE65020E6AF3C0003B567 /* PostTableViewCell.swift */,
 				3D0BE65220E6B8BF0003B567 /* NetworkManager.swift */,
 				3DDC1EC8210E714700CC3300 /* CommentTableViewCell.swift */,
+				3DDC1ECA210F88FE00CC3300 /* Comment.swift */,
 			);
 			path = ProductHuntExample;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				3DDC1EC7210E6E7500CC3300 /* CommentsTableViewController.swift in Sources */,
 				3D0BE64D20E6A8430003B567 /* Post.swift in Sources */,
 				3DDC1EC9210E714700CC3300 /* CommentTableViewCell.swift in Sources */,
+				3DDC1ECB210F88FE00CC3300 /* Comment.swift in Sources */,
 				3D0BE65320E6B8BF0003B567 /* NetworkManager.swift in Sources */,
 				3DA97DC520E4209700A4C58B /* AppDelegate.swift in Sources */,
 				3DC8480D20F3E1720015FE80 /* FeedViewController.swift in Sources */,
