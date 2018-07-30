@@ -13,6 +13,6 @@ struct Comment: Decodable {
   let body: String
 }
 
-struct CommentList: Decodable {
+struct CommentApiResponse: Decodable {
   let comments: [Comment]?
 }

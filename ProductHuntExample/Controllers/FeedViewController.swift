@@ -39,7 +39,12 @@ class FeedViewController: UIViewController {
 
   func updateFeed() {
     networkManager.getPosts() { result in
-      self.posts = result
+      switch result {
+      case let .success(posts):
+        self.posts = posts
+      case let .failure(error):
+        dump(error)
+      }
     }
   }
 }

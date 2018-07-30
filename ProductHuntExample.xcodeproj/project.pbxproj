@@ -18,6 +18,7 @@
 		3DDC1EC7210E6E7500CC3300 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1EC6210E6E7500CC3300 /* CommentsTableViewController.swift */; };
 		3DDC1EC9210E714700CC3300 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1EC8210E714700CC3300 /* CommentTableViewCell.swift */; };
 		3DDC1ECB210F88FE00CC3300 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1ECA210F88FE00CC3300 /* Comment.swift */; };
+		3DDC1ED2210F909D00CC3300 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1ED1210F909D00CC3300 /* EndPoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3DDC1EC6210E6E7500CC3300 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		3DDC1EC8210E714700CC3300 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		3DDC1ECA210F88FE00CC3300 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		3DDC1ED1210F909D00CC3300 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +68,53 @@
 		3DA97DC320E4209700A4C58B /* ProductHuntExample */ = {
 			isa = PBXGroup;
 			children = (
-				3DC8480C20F3E1720015FE80 /* FeedViewController.swift */,
+				3DDC1ECF210F8FE600CC3300 /* Views */,
+				3DDC1ECE210F8F2500CC3300 /* Models */,
+				3DDC1ECD210F8EFB00CC3300 /* Controllers */,
+				3DDC1ECC210F8EEE00CC3300 /* Networking */,
 				3DA97DC420E4209700A4C58B /* AppDelegate.swift */,
 				3DA97DC820E4209700A4C58B /* Main.storyboard */,
-				3DDC1EC6210E6E7500CC3300 /* CommentsTableViewController.swift */,
 				3DA97DCB20E4209800A4C58B /* Assets.xcassets */,
 				3DA97DCD20E4209800A4C58B /* LaunchScreen.storyboard */,
 				3DA97DD020E4209800A4C58B /* Info.plist */,
-				3D0BE64C20E6A8430003B567 /* Post.swift */,
-				3D0BE65020E6AF3C0003B567 /* PostTableViewCell.swift */,
-				3D0BE65220E6B8BF0003B567 /* NetworkManager.swift */,
-				3DDC1EC8210E714700CC3300 /* CommentTableViewCell.swift */,
-				3DDC1ECA210F88FE00CC3300 /* Comment.swift */,
 			);
 			path = ProductHuntExample;
+			sourceTree = "<group>";
+		};
+		3DDC1ECC210F8EEE00CC3300 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3DDC1ED1210F909D00CC3300 /* EndPoints.swift */,
+				3D0BE65220E6B8BF0003B567 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3DDC1ECD210F8EFB00CC3300 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DC8480C20F3E1720015FE80 /* FeedViewController.swift */,
+				3DDC1EC6210E6E7500CC3300 /* CommentsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3DDC1ECE210F8F2500CC3300 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D0BE64C20E6A8430003B567 /* Post.swift */,
+				3DDC1ECA210F88FE00CC3300 /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3DDC1ECF210F8FE600CC3300 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D0BE65020E6AF3C0003B567 /* PostTableViewCell.swift */,
+				3DDC1EC8210E714700CC3300 /* CommentTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +195,7 @@
 				3D0BE65320E6B8BF0003B567 /* NetworkManager.swift in Sources */,
 				3DA97DC520E4209700A4C58B /* AppDelegate.swift in Sources */,
 				3DC8480D20F3E1720015FE80 /* FeedViewController.swift in Sources */,
+				3DDC1ED2210F909D00CC3300 /* EndPoints.swift in Sources */,
 				3D0BE65120E6AF3C0003B567 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

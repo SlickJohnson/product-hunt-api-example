@@ -18,7 +18,7 @@ struct Post {
   let previewImageURL: URL
 }
 
-struct PostList: Decodable {
+struct PostApiResponse: Decodable {
   var posts: [Post]?
 }
 
